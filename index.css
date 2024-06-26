@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Carollo Playscript";
+  src: url("./D/carollo-playscript/CarolloPlayscriptRegular.otf"); }
+* {
+  margin: 0;
+  font-family: "Carollo Playscript", sans-serif; }
+
+header {
+  padding: 0 30px;
+  height: 100px;
+  display: flex;
+  align-items: center; }
+  header nav {
+    justify-content: center; }
+
+/*# sourceMappingURL=index.css.map */
