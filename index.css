@@ -6,11 +6,37 @@
   font-family: "Carollo Playscript", sans-serif; }
 
 header {
-  padding: 0 30px;
-  height: 100px;
+  padding: 0 85px;
+  height: 160px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  background-color: black;
+  color: white; }
   header nav {
-    justify-content: center; }
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-between;
+    width: 100%; }
+    header nav #links {
+      display: flex;
+      align-self: flex-end; }
+      header nav #links .link-item {
+        text-align: center;
+        display: block;
+        width: 180px;
+        height: 37px;
+        background-color: white;
+        margin-right: 43px;
+        border-radius: 50px;
+        font-size: 24px; }
+      header nav #links a {
+        text-decoration: none;
+        color: black; }
+  header #logo {
+    display: flex; }
+
+#hero {
+  height: 550px;
+  background-color: black; }
 
 /*# sourceMappingURL=index.css.map */
