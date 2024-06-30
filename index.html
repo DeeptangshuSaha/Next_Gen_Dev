@@ -14,19 +14,35 @@
         <div id="links">
             <span class="link-item"><a href="#">PROJECTS</a></span>
             <span class="link-item"><a href="#">ABOUT</a></span>
-<!--            <ul>-->
-<!--                <li><a href="#">PROJECTS</a></li>-->
-<!--                <li><a href="#">ABOUT</a></li>-->
-<!--            </ul>-->
         </div>
     </nav>
 </header>
 <div id="hero">
+    <div style="width: 1775px; height: 4px; background-color: white; border: 62px black solid; margin: auto "></div>
+    <div id="blackFill">
+        <div id="type">I <span class="auto-type"></span></div>
+        <img src="./D/myPicNoBg.png" width="350px">
+        <div id="quote">
+            <span>"Design is not just what it looks like and feels like.
+                Design is how it works."</span>
+            <span style="display: block">-Steve Jobs</span>
+        </div>
+    </div>
+    <div id="whiteFill">
 
+    </div>
 </div>
 <footer>
 
 </footer>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    let typed = new Typed(".auto-type", {
+        strings: ["SEE.","FEEL.","<i>CREATE.</i>"],
+        typeSpeed: 250,
+        backSpeed: 250,
+        loop: false,
+    })
+</script>
 </body>
 </html>

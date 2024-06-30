@@ -37,6 +37,27 @@ header {
 
 #hero {
   height: 550px;
-  background-color: black; }
+  background-color: black;
+  color: white; }
+  #hero div {
+    font-size: 64px; }
+  #hero #blackFill {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 20% 40%; }
+    #hero #blackFill #quote {
+      margin: auto; }
+    #hero #blackFill #type {
+      text-align: center;
+      margin-left: 50px; }
+    #hero #blackFill img {
+      margin: auto; }
+    #hero #blackFill span {
+      display: inline; }
+    #hero #blackFill #quote {
+      width: 675px;
+      height: 102px;
+      font-size: 28px;
+      text-align: left; }
 
 /*# sourceMappingURL=index.css.map */
