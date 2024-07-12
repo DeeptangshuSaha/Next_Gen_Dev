@@ -4,13 +4,20 @@ $lemon-chiffon: #F4F1BB
 $red-crayola: #ED254E
 $jet: #3C3744
 
+@mixin proficiency
+  margin: 20px 0
+  height: 5px
+  border-radius: 50px
+  background-color: black
+
 @font-face
   font-family: "Carollo Playscript"
   src: url("./D/carollo-playscript/CarolloPlayscriptRegular.otf")
 *
   margin: 0
   font-family: "Carollo Playscript", sans-serif
-
+  &::-webkit-scrollbar
+    display: none
 header
   padding: 0 85px
   height: 160px
@@ -47,26 +54,31 @@ header
   height: 550px
   background-color: black
   color: white
-  div
-    font-size: 64px
+  padding-top: 1px
+  margin-top: -1px
+  #whiteLine
+    width: 1775px
+    height: 4px
+    background-color: white
+    margin: 63px auto
   #blackFill
     display: grid
-    // grid-gap: 20px
-    //grid-template-rows:
+    grid-template-rows: 200px 220px
     grid-template-columns: repeat(2, 50%)
-    //grid-template-columns: 40%
-    grid-template-rows: 20% 40%
-    //grid-template-rows: 20%
-    //grid-template-rows: repeat(2, 20%)
-    //grid-template-rows: 1fr 1fr
+    //grid-template-rows: 20% 40%
+    //overflow: hidden
     #quote
-      // grid-row: span
-      margin: auto
+      float: left
+      margin-left: 150px
+      span
+        margin: auto
+        text-align: center
     #type
+      margin: auto
       text-align: center
-      margin-left: 50px
+      //margin-left: 50px
+      font-size: 64px
     img
-      //display: inline
       margin: auto
     span
       display: inline
@@ -75,3 +87,160 @@ header
       height: 102px
       font-size: 28px
       text-align: left
+  #blackFill2
+    //background-color: black
+    background-image: url("./D/Blog-Header.png")
+    //background-repeat: no-repeat
+    background-attachment: fixed
+    background-size: cover
+    height: 400px
+    color: white
+    display: flex
+    //justify-content: center
+    align-items: center
+    #brief
+      width: 35%
+      font-size: 32px
+      text-align: center
+      background-color: dimgrey
+      margin-left: 40px
+      padding: 20px
+      border-radius: 50px
+  #whiteFill
+    color: black
+    //text-align: center
+    //margin: auto
+    height: 20vh
+    #modalView
+      width: 50%
+      margin: auto
+      text-align: center
+      p
+        padding: 50px
+        //margin: 50px
+        font-size: 32px
+      button
+        //margin-left: 35%
+        margin: 30px
+        background-color: black
+        color: white
+        //border: 1px black solid
+        border: none
+        padding: 9px 5px
+        border-radius: 24px
+        font-size: 20px
+        width: 30%
+    #modalWrapper
+      display: none /* Hidden by default */
+      position: fixed /* Stay in place */
+      z-index: 1 /* Sit on top */
+      left: 0
+      top: 0
+      width: 100% /* Full width */
+      height: 100% /* Full height */
+      overflow: auto /* Enable scroll if needed */
+      background-color: rgb(0,0,0) /* Fallback color */
+      background-color: rgba(0,0,0,0.4)
+      #techStackModal
+        display: flex
+        overflow-x: scroll
+        width: 90%
+        margin: 15% auto
+        &::-webkit-scrollbar
+          display: none
+        .tech
+          flex: 0 0 400px
+          height: 180px
+          padding: 20px
+          margin: 10px 50px
+          background-color: white
+          color: black
+          border-radius: 30px
+          display: grid
+          grid-template-columns: repeat(2,auto)
+          grid-template-rows: repeat(2,auto)
+          div
+            grid-column: span 2
+          p
+            padding: 20px 0
+            width: 50%
+            font-size: 32px
+          span
+            font-style: italic
+            padding: 20px 0
+            width: 100%
+          svg
+            float: right
+            grid-row: span 2
+            margin: auto
+          #htmlProf
+            @include proficiency
+            width: 80%
+          #cssProf
+            @include proficiency
+            width: 80%
+          #jsProf
+            @include proficiency
+            width: 60%
+          #reactProf
+            @include proficiency
+            width: 30%
+          #cProf
+            @include proficiency
+            width: 70%
+          #rubyProf
+            @include proficiency
+            width: 80%
+          #pythonProf
+            @include proficiency
+            width: 95%
+          #sqlProf
+            @include proficiency
+            width: 95%
+          #linuxProf
+            @include proficiency
+            width: 90%
+
+  .sep
+    width: 95%
+    background-color: dimgrey
+    height: 5px
+    margin: 20px auto
+    border: white solid 5px
+
+  h1
+    text-align: center
+    padding: 40px
+  #projects
+    display: grid
+    grid-template-columns: repeat(2, auto)
+    //grid-template-rows: repeat(3,auto)
+    margin: auto 50px
+    a
+      text-decoration: none
+      padding: 20px 10px
+      color: navy
+      margin-bottom: 10px
+    .projectItem
+      width: 80%
+      height: 100%
+      background-color: white
+      padding: 30px
+
+  #aboutMe
+    p
+      //width: 60%
+      padding: 50px
+      text-align: justify
+      font-size: 28px
+      letter-spacing: 1px
+      line-height: 50px
+    button
+      margin: 20px 40px
+      background-color: black
+      color: white
+      border: none
+      padding: 9px 5px
+      border-radius: 24px
+      font-size: 20px
+      width: 10%
